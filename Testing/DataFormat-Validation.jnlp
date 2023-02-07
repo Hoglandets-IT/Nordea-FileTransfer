@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://girolink.plusgirot.se/jnlp">
+  <information>
+    <title>Global Payables Validation</title>
+    <vendor>Nordea</vendor>
+    <description>Global Payable Validation</description>
+    <description kind="short">GPS Test Tool</description>
+    <description kind="tooltip">GPS Test Tool</description>
+ 
+  </information>
+  <information locale="se">
+    <description>Nordea Global Payable Solution</description>
+  </information>
+<security>
+    <all-permissions />
+  </security>
+  <update check="always" policy="always" />
+  <resources>
+    <java version="1.6+" href="http://java.sun.com/products/autodl/j2se"
+ java-vm-args="-Xms64m -Xmx256m -XX:NewRatio=3" />
+    <jar href="glwsjr03.jar" main="true" />
+    <jar href="glwsjrc3.jar" download="eager" />
+    <jar href="glwsjrx3.jar" download="eager" />
+    <jar href="glwsjrs3.jar" download="eager" />
+    <jar href="glwsjrj3.jar" download="eager" />
+    <property name="jnlp.com.nordea.xmltt.config" value="gpspain00103" />
+  </resources>
+  <application-desc main-class="com.nordea.xmltt.XmlTestTool" />
+</jnlp>
